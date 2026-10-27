@@ -1,0 +1,14 @@
+HALK GIRIS YARDIMCISI
+1. bilgiler.txt dosyasina her satira bir hesap olacak sekilde TC:PAROLA yazin (Tek veya birden fazla hesap yazabilirsiniz).
+2. BASLAT.bat dosyasina cift tiklayin.
+3. Bot sayfayi acar, CAPTCHA'yi cozer ve bilgileri doldurur.
+4. Eger banka "hatali girdiniz" uyarisi verirse:
+   - Bot ekranda [HATALI] uyarisi verir.
+   - Sayfanin tum cerezlerini ve oturumunu temizler.
+   - bilgiler.txt icindeki bir alttaki hesaba otomatik gecer ve dener.
+5. Giris basarili oldugunda SMS / Mobil onay beklenir.
+
+AYARLAR (halk.py dosyasinin basinda):
+- AUTO_SUBMIT_DELAY = 2   -> Giris dugmesine basmadan onceki bekleme suresi (saniye).
+- AUTO_SUBMIT = True      -> False yaparsaniz bot dugmeye basmaz, siz Enter'a basarsiniz.
+- USE_PROXY = False       -> Proxy kullanmak isterseniz True yapin.
